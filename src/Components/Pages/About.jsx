@@ -19,7 +19,7 @@ const About = () => {
           <div className="w-full md:w-1/2 flex items-center">
             <p className="text-lg md:text-xl text-gray-700 leading-relaxed text-center md:text-left">
               At{" "}
-              <span className="font-semibold text-blue-600">
+              <span className="font-semibold text-sky-800">
                 Vital Health Care Lab
               </span>
               , we are committed to providing accurate, efficient, and
@@ -31,7 +31,7 @@ const About = () => {
               control and confidentiality, we guarantee reliable results and
               protect your personal information. Whether for routine tests or
               specialized screenings,{" "}
-              <span className="font-semibold text-blue-600">
+              <span className="font-semibold text-sky-800">
                 Vital Health Care Lab
               </span>{" "}
               is your trusted partner in healthcare, delivering timely and
@@ -42,7 +42,7 @@ const About = () => {
 
         {/* Header */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-sky-800 mb-4">
             About Prime Vital Health Care Lab
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -55,7 +55,7 @@ const About = () => {
         {/* Mission & Vision */}
         <div className="grid md:grid-cols-2 gap-12 mb-16">
           <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold text-sky-800 mb-4">
               Our Mission
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -65,7 +65,7 @@ const About = () => {
             </p>
           </div>
           <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            <h2 className="text-2xl font-bold text-sky-800 mb-4">
               Our Vision
             </h2>
             <p className="text-gray-600 leading-relaxed">
@@ -78,7 +78,7 @@ const About = () => {
 
         {/* Values */}
         <div className="bg-white p-8 rounded-lg shadow-lg mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
+          <h2 className="text-3xl font-bold text-sky-800 mb-8 text-center">
             Our Values
           </h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -154,7 +154,7 @@ const About = () => {
 
         {/* Team */}
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
+          <h2 className="text-3xl font-bold text-sky-800 mb-8">
             Our Expert Team
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-12">

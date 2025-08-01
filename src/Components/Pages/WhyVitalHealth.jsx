@@ -24,7 +24,7 @@ const features = [
 const WhyVitalHealth = () => {
   return (
     <div className="bg-blue-900 text-white py-12 px-4" style={{ backgroundColor: '#218ab8' }}>
-      <h2 className="text-3xl font-bold text-center mb-10">Why Vitalhealthcarelab?</h2>
+      <h2 className="text-3xl font-bold text-center mb-10">Why Vital healthcare lab?</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
         {features.map((item, index) => (
           <div key={index} className="bg-white text-gray-800 rounded-lg p-6 shadow-md text-center">

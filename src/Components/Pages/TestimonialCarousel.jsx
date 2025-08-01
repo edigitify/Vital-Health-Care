@@ -39,13 +39,13 @@ const Testimonials = () => {
   return (
     <section className="py-12 px-4 md:px-16 bg-white">
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-semibold text-blue-400">What People Say</h2>
+        <h2 className="text-3xl font-semibold text-sky-800">What People Say</h2>
       </div>
 
       <div className="md:flex md:space-x-10">
         {/* Left Content */}
-        <div className="md:w-1/2 space-y-4 text-gray-700">
-          <h3 className="text-xl font-semibold text-blue-600">Testimonial</h3>
+        <div className="md:w-1/2 space-y-4 text-sky-800">
+          <h3 className="text-xl font-semibold text-sky-800">Testimonial</h3>
           <p>
             We take pride in serving thousands of happy clients who trust us for reliable diagnostic testing.
           </p>
@@ -76,8 +76,8 @@ const Testimonials = () => {
             {testimonials.map((t, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-white shadow-md p-6 rounded-xl text-center h-full">
-                  <div className="text-blue-500 text-lg mb-2">★★★★★</div>
-                  <p className="text-gray-600 mb-4">{t.review}</p>
+                  <div className="text-sky-800 text-lg mb-2">★★★★★</div>
+                  <p className="text-sky-800 mb-4">{t.review}</p>
                   <img
                     src={t.image}
                     alt={t.name}

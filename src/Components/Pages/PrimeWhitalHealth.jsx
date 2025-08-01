@@ -131,7 +131,7 @@ const navigate = useNavigate();
 
     {
       title: "Comprehensive Package",
-      description: "Comprehensive Health Checkup Package",
+      description: "Comprehensive  Package",
       price: "₹1199",
       originalPrice: "₹2299",
       image: Image2,
@@ -627,7 +627,7 @@ const navigate = useNavigate();
 
   return (
     <div className="bg-gray-50 min-h-screen py-10 px-4">
-      <h1 className="text-3xl font-bold text-center text-blue-700 mb-2">
+      <h1 className="text-3xl font-bold text-center text-sky-800 mb-2">
         Prime Vital Healthcare Lab Packages
       </h1>
       <p className="text-center text-gray-600 mb-8">
@@ -652,14 +652,14 @@ const navigate = useNavigate();
                 className="w-full h-52 object-cover rounded-xl"
               />
               <div className="absolute inset-0 bg-opacity-40 flex items-center justify-center rounded-xl">
-                <h2 className="text-white text-xl font-semibold text-center px-2">
+                <h2 className="text-white text-xl font-semibold text-center px-2 ">
                   {pkg.title}
                 </h2>
               </div>
             </div>
 
             <div className="mt-4">
-              <p className="text-gray-700 mb-1">{pkg.description}</p>
+              <p className=" mb-1 text-xl font-bold text-sky-800">{pkg.description}</p>
               <div className="text-blue-600 text-lg font-bold">
                 {pkg.price}{" "}
                 <span className="line-through text-gray-400 text-sm">
@@ -691,7 +691,7 @@ const navigate = useNavigate();
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4"
+            className="fixed inset-0 bg-transperent bg-opacity-50 flex items-center justify-center z-50 p-4"
             onClick={closeModal}
           >
             <motion.div
@@ -728,22 +728,22 @@ const navigate = useNavigate();
               </div>
 
               <div className="p-6">
-                <h2 className="text-2xl font-bold text-blue-700 mb-2">
+                <h2 className="text-2xl font-bold text-sky-800 mb-2">
                   {selectedPackage.title}
                 </h2>
 
                 <div className="flex items-center gap-4 mb-4">
-                  <span className="text-2xl font-bold text-blue-600">
+                  <span className="text-2xl font-bold text-sky-800">
                     {selectedPackage.price}
                   </span>
-                  <span className="line-through text-gray-400">
+                  <span className="line-through text-sky-800">
                     {selectedPackage.originalPrice}
                   </span>
                 </div>
 
                 <div className="space-y-4">
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                    <h3 className="text-lg font-semibold text-sky-800 mb-2">
                       Description
                     </h3>
                     <p className="text-gray-600">
@@ -752,7 +752,7 @@ const navigate = useNavigate();
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                    <h3 className="text-lg font-semibold text-sky-800 mb-2">
                       Tests Included
                     </h3>
                     <p className="text-gray-600 bg-gray-50 p-3 rounded-lg">
@@ -761,7 +761,7 @@ const navigate = useNavigate();
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                    <h3 className="text-lg font-semibold text-sky-800 mb-2">
                       Benefits
                     </h3>
                     <ul className="space-y-1">
@@ -788,7 +788,7 @@ const navigate = useNavigate();
                   </div>
 
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                    <h3 className="text-lg font-semibold text-sky-800 mb-2">
                       Preparation
                     </h3>
                     <p className="text-gray-600 bg-yellow-50 p-3 rounded-lg border-l-4 border-yellow-400">

@@ -5,7 +5,7 @@ import {
   FaWhatsapp,
   FaPhone,
 } from 'react-icons/fa';
-
+import { Link } from 'react-router-dom';
 const Footer = ()=> {
   return (
     <footer className="bg-[#0C233B] text-white px-6 py-20 text-2xl">
@@ -35,12 +35,12 @@ const Footer = ()=> {
         <div>
           <h3 className="text-blue-400 font-semibold mb-3">Important Links</h3>
           <ul className="space-y-2">
-            <li>Home</li>
-            <li>About us</li>
-            <li>Packages</li>
-            <li>Corporate Activities</li>
-            <li>Blog</li>
-            <li>Contact</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About us</Link></li>
+            <li> <Link to="/packages">Packages</Link> </li>
+            <li> <Link to="/corporate">Corporate Activities</Link> </li>
+            <li> <Link to="/blog">Blog</Link> </li>
+            <li> <Link to="/contact">Contact</Link> </li>
           </ul>
         </div>
 

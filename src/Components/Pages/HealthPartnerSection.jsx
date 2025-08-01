@@ -7,7 +7,7 @@ const HealthPartnerSection = () => {
     <section className="px-6 py-20 bg-white md:flex md:items-center md:justify-between max-w-7xl mx-auto">
       {/* Text Section */}
       <div className="w-full md:w-1/2">
-        <h2 className="text-3xl font-bold text-blue-800 mb-4">
+        <h2 className="text-3xl font-bold text-sky-800 mb-4">
           YOUR FAMILY'S HEALTH PARTNER
         </h2>
         <p className="text-gray-700 mb-6">

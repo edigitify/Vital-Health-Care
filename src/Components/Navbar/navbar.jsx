@@ -16,7 +16,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="shadow-lg sticky top-0 z-50 text-2xl" style={{ backgroundColor: '#218ab8' }}>
+    <nav
+      className="shadow-lg sticky top-0 z-50 text-2xl"
+      style={{ backgroundColor: "#218ab8" }}
+    >
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
@@ -28,7 +31,7 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex space-x-8">
-            <NavLink
+            {/* <NavLink
               to="/"
               className={({ isActive }) =>
                 `font-medium hover:text-blue-600 ${
@@ -37,12 +40,14 @@ const Navbar = () => {
               }
             >
               Home
-            </NavLink>
+            </NavLink> */}
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `font-medium hover:text-blue-600 ${
-                  isActive ? "text-white" : "text-gray-700"
+                `font-medium hover:text-darkblue ${
+                  isActive
+                    ? "text-white border-b-2 border-white"
+                    : "text-gray-700 border-b-2 border-transparent"
                 }`
               }
             >
@@ -51,8 +56,10 @@ const Navbar = () => {
             <NavLink
               to="/packages"
               className={({ isActive }) =>
-                `font-medium hover:text-blue-600 ${
-                  isActive ? "text-white" : "text-gray-700"
+                `font-medium hover:text-darkblue ${
+                  isActive
+                    ? "text-white border-b-2 border-white"
+                    : "text-gray-700 border-b-2 border-transparent"
                 }`
               }
             >
@@ -61,8 +68,10 @@ const Navbar = () => {
             <NavLink
               to="/corporate"
               className={({ isActive }) =>
-                `font-medium hover:text-blue-600 ${
-                  isActive ? "text-white" : "text-gray-700"
+                `font-medium hover:text-darkblue ${
+                  isActive
+                    ? "text-white border-b-2 border-white"
+                    : "text-gray-700 border-b-2 border-transparent"
                 }`
               }
             >
@@ -71,14 +80,16 @@ const Navbar = () => {
             <NavLink
               to="/blog"
               className={({ isActive }) =>
-                `font-medium hover:text-blue-600 ${
-                  isActive ? "text-white" : "text-gray-700"
+                `font-medium hover:text-darkblue ${
+                  isActive
+                    ? "text-white border-b-2 border-white"
+                    : "text-gray-700 border-b-2 border-transparent"
                 }`
               }
             >
               Blog
             </NavLink>
-            <NavLink
+            {/* <NavLink
               to="/contact"
               className={({ isActive }) =>
                 `font-medium hover:text-blue-600 ${
@@ -87,14 +98,14 @@ const Navbar = () => {
               }
             >
               Contact
-            </NavLink>
+            </NavLink> */}
           </div>
 
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
               onClick={toggleMobileMenu}
-              className="text-gray-700 hover:text-blue-600"
+              className="text-gray-700 hover:text-darkblue"
             >
               <svg
                 className="h-6 w-6"
@@ -114,7 +125,10 @@ const Navbar = () => {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <button className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium" onClick={handleClick}>
+            <button
+              className="bg-white hover:text-darkblue text-sky-600 px-6 py-2 rounded-full font-medium"
+              onClick={handleClick}
+            >
               Book Appointment
             </button>
           </div>
@@ -126,7 +140,7 @@ const Navbar = () => {
             <div className="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-gray-200">
               <Link
                 to="/"
-                className="block px-3 py-2 text-gray-700 hover:text-blue-600 hover:bg-blue-50 rounded-md"
+                className="block px-3 py-2 text-gray-700 hover:text-darkblue hover:bg-blue-50 rounded-md"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
@@ -166,7 +180,10 @@ const Navbar = () => {
               >
                 Contact
               </Link>
-              <button className="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium" onClick={handleClick}>
+              <button
+                className="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white px-6 py-2 rounded-full font-medium"
+                onClick={handleClick}
+              >
                 Book Appointment
               </button>
             </div>

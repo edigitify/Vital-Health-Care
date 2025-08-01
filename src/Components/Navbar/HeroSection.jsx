@@ -1,4 +1,4 @@
-import React from "react";
+import { useState, useEffect } from "react";
 import BackgroundVideo from "../../assets/video.mp4";
 import MobileVideo from "../../assets/videomobile.mp4";
 import { useNavigate } from "react-router-dom";
@@ -6,9 +6,23 @@ import { useNavigate } from "react-router-dom";
 const HeroSection = () => {
   const navigate = useNavigate();
 
+  const words = ["TRUST", "COMPASSION", "EXPERTISE"];
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prev) => (prev + 1) % words.length);
+    }, 2000); // Change word every 2 seconds
+    return () => clearInterval(interval);
+  }, []);
+
   const handleClick = () => {
     navigate("/packages");
   };
+
+  const handlebook = () => {
+    navigate("/contact");
+  }
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -36,20 +50,21 @@ const HeroSection = () => {
         Your browser does not support the video tag.
       </video>
 
-      {/* Overlay */}
-      {/* <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
-
       {/* Content */}
       <div className="relative z-10 text-white px-4 mx-auto w-full sm:max-w-4xl sm:text-center sm:items-center sm:justify-center flex sm:block">
         <div className="w-1/2 text-left sm:w-full">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Welcome to Prime Vital Health Care Lab
+          <h1 className="text-4xl md:text-6xl  mb-6">
+            Care that begins with
           </h1>
-          <p className="text-xl md:text-2xl mb-8">
+          <h2 className="text-6xl md:text-6xl font-bold text-white transition-opacity duration-500">
+            {words[currentWordIndex]}
+          </h2>
+
+          <p className="text-xl md:text-2xl mb-8 mt-4">
             Trusted Diagnostics. Faster Results. Accurate Reports.
           </p>
           <div className="flex flex-col sm:flex-row justify-start sm:justify-center gap-4">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-medium transition duration-300">
+            <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-medium transition duration-300" onClick={handlebook}>
               Book a Test
             </button>
             <button
