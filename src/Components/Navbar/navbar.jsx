@@ -31,7 +31,7 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <div className="hidden md:flex space-x-8">
-            {/* <NavLink
+            <NavLink
               to="/"
               className={({ isActive }) =>
                 `font-medium hover:text-blue-600 ${
@@ -40,7 +40,7 @@ const Navbar = () => {
               }
             >
               Home
-            </NavLink> */}
+            </NavLink>
             <NavLink
               to="/about"
               className={({ isActive }) =>
