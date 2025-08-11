@@ -6,9 +6,9 @@ import {
   FaPhone,
 } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-const Footer = ()=> {
+const Footer = () => {
   return (
-    <footer className="bg-[#0C233B] text-white px-6 py-20 text-2xl">
+    <footer className="bg-[#0C233B] text-white px-6 py-20 text-xl">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
         {/* Logo & Socials */}
         <div>
@@ -64,11 +64,10 @@ const Footer = ()=> {
             <li>info@vitalhealthcarelab.com</li>
             <li>+91 9872654265</li>
             <li>
-              Flat No-28, Office No.-420,
+              Plot No - C - 20, Office No - 404, Aruna
               <br />
-              Aliva Park, Laxmi Nagar,
-              <br />
-              Delhi - 110092
+              Park, Laxmi Nagar Delhi - 110092
+
             </li>
           </ul>
         </div>

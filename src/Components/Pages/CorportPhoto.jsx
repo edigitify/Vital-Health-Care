@@ -13,50 +13,50 @@ import Image9 from "../../assets/col/c2.jpg";
 import Image10 from "../../assets/col/c3.jpg";
 import Image11 from "../../assets/col/c4.jpg";
 const sampleCards = [
-   {
-  id: 1,
-  title: "Free Health Camp at S.D. Public School",
-  description: "Organized in Bhajanpura in collaboration with Dharamshila Hospital.",
-  images: [
-    Image,     
-    Image1,
-    Image2,
-    Image3,
-  ],
-  tags: ["Health", "Community", "Event"],
-  date: "March 15, 2025",
-  location: "S.D. Public School, Bhajanpura, Delhi"
-},
+  {
+    id: 1,
+    title: "Free Health Camp at S.D. Public School",
+    description: "Organized in Bhajanpura in collaboration with Dharamshila Hospital.",
+    images: [
+      Image,
+      Image1,
+      Image2,
+      Image3,
+    ],
+    tags: ["Health", "Community", "Event"],
+    date: "March 15, 2025",
+    location: "S.D. Public School, Bhajanpura, Delhi"
+  },
 
   {
-  id: 2,
-  title: "Free Health Camp with BJP Leader Mr. Naresh Kumar Airan",
-  description: "A free health camp organized in Pitampura, Delhi, with BJP leader Mr. Naresh Kumar Airan, offering medical checkups and health consultations to the local community.",
-  images: [
-    Image4,
-    Image5,
-    Image6,
-    Image7
-  ],
-  tags: ["Health", "Community", "Event"],
-  date: "March 12, 2025",
-  location: "Pitampura, Delhi"
-},
+    id: 2,
+    title: "Free Health Camp with BJP Leader Mr. Naresh Kumar Airan",
+    description: "A free health camp organized in Pitampura, Delhi, with BJP leader Mr. Naresh Kumar Airan, offering medical checkups and health consultations to the local community.",
+    images: [
+      Image4,
+      Image5,
+      Image6,
+      Image7
+    ],
+    tags: ["Health", "Community", "Event"],
+    date: "March 12, 2025",
+    location: "Pitampura, Delhi"
+  },
   {
-  id: 3,
-  title: "Free Health Camp at Galgotias College",
-  description: "A free health camp organized at Galgotias College, Greater Noida, aimed at promoting student and faculty well-being through basic medical checkups and health awareness sessions.",
-  images: [
-   Image8,
-   Image9,
-   Image10,
-   Image11
-  ],
-  tags: ["Education", "College", "Event"],
-  date: "March 10, 2025",
-  location: "Galgotias College, Greater Noida"
-},
-  
+    id: 3,
+    title: "Free Health Camp at Galgotias College",
+    description: "A free health camp organized at Galgotias College, Greater Noida, aimed at promoting student and faculty well-being through basic medical checkups and health awareness sessions.",
+    images: [
+      Image8,
+      Image9,
+      Image10,
+      Image11
+    ],
+    tags: ["Education", "College", "Event"],
+    date: "March 10, 2025",
+    location: "Galgotias College, Greater Noida"
+  },
+
 ];
 
 const CorportPhoto = () => {
@@ -76,16 +76,7 @@ const CorportPhoto = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <header className="bg-white shadow-sm">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <h1 className="text-3xl font-bold text-sky-800 text-center">
-             Gallery
-          </h1>
-          {/* <p className="text-gray-600 text-center mt-2">
-            Click on any card to view multiple images in a beautiful modal
-          </p> */}
-        </div>
-      </header>
+
 
       {/* Main content */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
@@ -103,7 +94,7 @@ const CorportPhoto = () => {
           ))}
         </div>
 
-       
+
       </main>
     </div>
   );

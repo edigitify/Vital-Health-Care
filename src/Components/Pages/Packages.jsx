@@ -19,7 +19,7 @@ const navigate = useNavigate();
   const packages = [
     {
       name: "Basic Health Checkup",
-      price: "$99",
+      price: "₹1199",
       description: "Essential health screening for general wellness",
       image: Image1,
       features: [
@@ -34,7 +34,7 @@ const navigate = useNavigate();
     },
     {
       name: "Comprehensive Health Package",
-      price: "$199",
+      price: "₹1199",
       description: "Complete health assessment with detailed analysis",
        image: Image2,
       features: [
@@ -51,7 +51,7 @@ const navigate = useNavigate();
     },
     {
       name: "Executive Health Package",
-      price: "$399",
+      price: "₹1199",
       description: "Premium health screening for executives",
        image: Image3,
       features: [
@@ -66,7 +66,7 @@ const navigate = useNavigate();
       popular: false
     },{
       name: "Senior Citizen Health Package",
-      price: "$299",
+      price: "₹1199",
       description: "Tailored health checkup for senior citizens",
       image: Image4,
       features: [
@@ -80,7 +80,7 @@ const navigate = useNavigate();
     },
     {
       name:"Total Package",
-      price: "$499",
+      price: "₹1199",
       description: "All-inclusive health checkup for complete peace of mind",
       image: Image5,
       features: [

@@ -10,7 +10,7 @@ const Blog = () => {
       date: "December 15, 2024",
       category: "Health Education",
       readTime: "5 min read",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      image: "https://cdn.prod.website-files.com/66bdfc87da2d5175e8c7dd54/679ca4f452fb24be1d70272d_doctor-talking-with-patient-about-blood-sample.jpg"
     },
     {
       id: 2,
@@ -60,7 +60,7 @@ const Blog = () => {
       date: "December 3, 2024",
       category: "Endocrinology",
       readTime: "7 min read",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      image: "https://www.verywellhealth.com/thmb/Ux4FyeqlXftlLcAuOgNRHiHkGPA=/300x200/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1247879942-6ae731343c284df78527858d67d88a4a.jpg"
     }
   ];
 

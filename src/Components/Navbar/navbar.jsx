@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className="shadow-lg sticky top-0 z-50 text-2xl"
+      className="shadow-lg sticky top-0 z-50 text-xl"
       style={{ backgroundColor: "#218ab8" }}
     >
       <div className="max-w-7xl mx-auto px-4">

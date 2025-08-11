@@ -45,7 +45,7 @@ const Contact = () => {
                   />
                 </div>
               </div>
-              
+
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
                   Email Address
@@ -58,7 +58,7 @@ const Contact = () => {
                   placeholder="Enter your email"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
                   Phone Number
@@ -71,7 +71,7 @@ const Contact = () => {
                   placeholder="Enter your phone number"
                 />
               </div>
-              
+
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-2">
                   Subject
@@ -89,7 +89,7 @@ const Contact = () => {
                   <option value="feedback">Feedback</option>
                 </select>
               </div>
-              
+
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
                   Message
@@ -102,7 +102,7 @@ const Contact = () => {
                   placeholder="Enter your message"
                 ></textarea>
               </div>
-              
+
               <button
                 type="submit"
                 className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition duration-300"
@@ -116,7 +116,7 @@ const Contact = () => {
           <div className="space-y-8">
             <div className="bg-white p-8 rounded-lg shadow-lg">
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h2>
-              
+
               <div className="space-y-6">
                 <div className="flex items-start">
                   <div className="bg-blue-100 p-3 rounded-lg mr-4">
@@ -128,13 +128,16 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Address</h3>
                     <p className="text-gray-600">
-                      123 Medical Center Drive<br />
-                      Suite 100<br />
-                      City, State 12345
+                      <li>
+                        Plot No - C - 20, Office No - 404, Aruna
+                        <br />
+                        Park, Laxmi Nagar Delhi - 110092
+
+                      </li>
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="bg-green-100 p-3 rounded-lg mr-4">
                     <svg className="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -144,12 +147,11 @@ const Contact = () => {
                   <div>
                     <h3 className="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
                     <p className="text-gray-600">
-                      Main: (555) 123-4567<br />
-                      Fax: (555) 123-4568
+                     +91 9871245226
                     </p>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="bg-purple-100 p-3 rounded-lg mr-4">
                     <svg className="w-6 h-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -173,15 +175,15 @@ const Contact = () => {
               <div className="space-y-3">
                 <div className="flex justify-between">
                   <span className="text-gray-600">Monday - Friday</span>
-                  <span className="font-medium">7:00 AM - 7:00 PM</span>
+                  <span className="font-medium">6:00 AM - 11:00 PM</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Saturday</span>
-                  <span className="font-medium">8:00 AM - 5:00 PM</span>
+                  <span className="font-medium">7:00 AM - 11:00 PM</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-gray-600">Sunday</span>
-                  <span className="font-medium">9:00 AM - 3:00 PM</span>
+                  <span className="font-medium">7:00 AM - 11:00 PM</span>
                 </div>
               </div>
               <div className="mt-6 p-4 bg-blue-50 rounded-lg">
