@@ -19,7 +19,7 @@ const navigate = useNavigate();
   const packages = [
     {
       name: "Basic Health Checkup",
-      price: "₹1199",
+      price: "₹1999",
       description: "Essential health screening for general wellness",
       image: Image1,
       features: [
@@ -34,7 +34,7 @@ const navigate = useNavigate();
     },
     {
       name: "Comprehensive Health Package",
-      price: "₹1199",
+      price: "₹1999",
       description: "Complete health assessment with detailed analysis",
        image: Image2,
       features: [
@@ -80,7 +80,7 @@ const navigate = useNavigate();
     },
     {
       name:"Total Package",
-      price: "₹1199",
+      price: "₹2999",
       description: "All-inclusive health checkup for complete peace of mind",
       image: Image5,
       features: [

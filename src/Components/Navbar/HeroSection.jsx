@@ -12,7 +12,7 @@ const HeroSection = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentWordIndex((prev) => (prev + 1) % words.length);
-    }, 2000); // Change word every 2 seconds
+    }, 2000);
     return () => clearInterval(interval);
   }, []);
 
@@ -22,7 +22,7 @@ const HeroSection = () => {
 
   const handlebook = () => {
     navigate("/contact");
-  }
+  };
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -53,18 +53,24 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-white px-4 mx-auto w-full sm:max-w-4xl sm:text-center sm:items-center sm:justify-center flex sm:block">
         <div className="w-1/2 text-left sm:w-full">
-          <h1 className="text-4xl md:text-6xl  mb-6">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl mb-6">
             Care that begins with
           </h1>
-          <h2 className="text-6xl md:text-6xl font-bold text-white transition-opacity duration-500">
+
+          {/* Mobile-friendly word rotation */}
+          <h2 className="text-3xl sm:text-5xl md:text-6xl font-bold text-white transition-opacity duration-500 text-center sm:text-center">
             {words[currentWordIndex]}
           </h2>
 
-          <p className="text-xl md:text-2xl mb-8 mt-4">
+          <p className="text-lg sm:text-xl md:text-2xl mb-8 mt-4">
             Trusted Diagnostics. Faster Results. Accurate Reports.
           </p>
+
           <div className="flex flex-col sm:flex-row justify-start sm:justify-center gap-4">
-            <button className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-medium transition duration-300" onClick={handlebook}>
+            <button
+              className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-3 rounded-full text-lg font-medium transition duration-300"
+              onClick={handlebook}
+            >
               Book a Test
             </button>
             <button
